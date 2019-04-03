@@ -1,0 +1,36 @@
+<h1><u>Results</u></h1>
+
+<p style="font-size: 20px">Movies searches for - <em style="color: Red"><%= search %></em></p>
+
+<!--Check if there's even any search results for the movie-->
+<% if(data["Response"] != "False") { %>
+<ol>
+    <% for(var i = 0 ; i < data["Search"].length; i++) { %>
+        <li style="padding: 20px">
+            <p style="font-size: 22px"><strong><%= data["Search"][i]["Title"] %> (<%= data["Search"][i]["Year"] %>)</strong></p>
+            <p style="color: #404040"> <strong>Type: </strong><%= data["Search"][i]["Type"] %><br>
+                <strong>Rated: </strong><%= movieInfo[i]["Rated"] %><br>
+                <strong>Released: </strong><%= movieInfo[i]["Released"] %><br>
+                <strong>Runtime: </strong><%= movieInfo[i]["Runtime"] %><br>
+                <strong>Genre: </strong><%= movieInfo[i]["Genre"] %><br>
+                <strong>Director: </strong><%= movieInfo[i]["Director"] %><br>
+                <strong>Writer: </strong><%= movieInfo[i]["Writer"] %><br>
+                <strong>Actors: </strong><%= movieInfo[i]["Actors"] %><br>
+                <strong>Plot: </strong></strong><%= movieInfo[i]["Plot"] %><br>
+                <strong>Language: </strong><%= movieInfo[i]["Language"] %><br>
+                <strong>Country: </strong><%= movieInfo[i]["Country"] %><br>
+                <strong>Awards: </strong><%= movieInfo[i]["Awards"] %><br>
+                <strong>Website: </strong><a href="<%= movieInfo[i]["Website"] %>"><%= movieInfo[i]["Website"] %></a><br>
+            </p>
+            <br>
+            <img src="<%= data["Search"][i]["Poster"] %>" style="width: 200px">
+        </li>
+    <% }; %>
+</ol>
+<% } else { %>
+    <h2>Movie not found!</h2>
+<% } %>
+
+
+<br>
+<a href="/">Go back!</a>

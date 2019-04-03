@@ -25,9 +25,9 @@ NPM
 * [Node.js] (https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 * [Express] (https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
 * [OMDB API] (http://www.omdbapi.com/) - The OMDb API is a RESTful web service to obtain movie information.
+* [Axios] (https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
 * [Javascript] (https://www.javascript.com/) - High-level, interpreted programming language
 * [HTML] (https://www.html.com/) - Standard markup language
-* [CSS] (https://css.com) - Style sheet language
 
 ## Authors
 

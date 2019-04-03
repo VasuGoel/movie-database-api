@@ -1,0 +1,20 @@
+{
+  "name": "movies_database_api",
+  "version": "1.0.0",
+  "description": "Movies Database search app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Vasu Goel",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
